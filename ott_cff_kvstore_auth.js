@@ -20,7 +20,6 @@ async function handler(event) {
     
     // check if uid and sid exists
     if (! keys.includes('uid') || !keys.includes('sid')){
-        console.log("header missing")
         return response401
     }
     // get uid and sid
